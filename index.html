@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordier</title>
+    <link href='styles.css' rel = 'stylesheet'>
+    <script src="script.js"></script>
+</head>
+<body>
+    <section id="namescreen" class='screen active'>
+        <h1 id="title">Wordier!</h1>
+        <form onsubmit="toMenu(event)">
+            <input class="name" id='name' type="text" placeholder="What's your name?">
+            <input class="name" id='name-submit' type="submit" value="Confirm">
+        </form>
+    </section>
+    <section id="menuscreen" class="screen">
+        <button onclick='startGame()' id="single-btn">Single Player</button>
+        <button id="coming-soon">Coming soon...</button>
+    </section>
+    <section id="gamescreen" class="screen">
+        <p id="word-guess"></p>
+        <form>
+            <input class="guess" id="answer" type="text" placeholder="What's your answer">
+            <input class="guess" id="answer-btn" type="submit" value="Confirm">
+        </form>
+    </section>
+</body>
+</html>
