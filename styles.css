@@ -1,0 +1,10 @@
+.screen {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6 ease;
+}
+
+.screen.active {
+    opacity: 1;
+    pointer-events: auto;
+}
