@@ -8,9 +8,10 @@ function toMenu(event) {
     if (!name) return alert('Please Enter your name!')
     event.preventDefault();
     beforeAfter('menuscreen', 'namescreen')
-
 }
 
-function startGame() {
+function startGame(event) {
+    
+    event.preventDefault();
     beforeAfter('gamescreen', 'menuscreen')
 }
